@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popup Alignment</title>
+</head>
+
+<style>
+    button {
+        font-size: 20px;
+        padding: 5px;
+        margin-top: 5%;
+        margin-left: 1%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        width: 200px;
+        align-self: center;
+        border-radius: 15px;
+        background-color: aqua;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    div {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div>
+        <button onclick=' popup  ( "https:www.w3schools.com" , "popup", 400, 400);'>Open New Window</button>
+        <button onclick='close();'>Close New Window</button>
+    </div>
+</body>
+
+<script>
+    
+
+    function popup(myURL, title, myWidth, myHeight) {
+            var Left = (screen.width - myWidth) / 2;
+            var Top = (screen.height - myHeight) / 4;
+            var myWindow = window.open(myURL, title, 'width=' + myWidth + ', height=' + myHeight + ', top=' + Top + ', left=' + Left);
+         }
+
+    function close() {
+        newWindow.close();
+    }
+
+
+    
+
+     
+
+</script>
+
+</html>
